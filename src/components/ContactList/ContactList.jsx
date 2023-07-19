@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
-import { deleteContact } from 'redux/operations';
-import { filteredContactsSelector } from 'redux/selectors';
+import { filteredContactsSelector } from 'redux/contacts/selectors';
+import { deleteContact } from 'redux/contacts/operations';
 import { List, Item, Button } from './ContactList.styled';
 
 export const ContactList = () => {
@@ -24,7 +24,7 @@ export const ContactList = () => {
     <List>
       {contacts.map(contact => (
         <Item key={contact.id}>
-          {contact.name}: {contact.phone}
+          {contact.name}: {contact.number}
           <Button type="button" id={contact.id} onClick={handleDeleteContact}>
             Delete
           </Button>

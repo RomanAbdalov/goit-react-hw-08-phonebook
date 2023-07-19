@@ -6,3 +6,8 @@ export * from 'components/ContactForm/ContactForm.jsx';
 export * from 'components/ContactList/ContactList.jsx';
 export * from 'components/Filter/Filter.jsx';
 export * from 'components/Loader/Loader.jsx';
+export * from 'components/LoginForm/LoginForm.jsx';
+export * from 'components/RegisterForm/RegisterForm.jsx';
+export * from 'components/AuthNav/AuthNav.jsx';
+export * from 'components/UserMenu/UserMenu.jsx';
+export * from 'components/SharedLayout/SharedLayout.jsx';
